@@ -1,0 +1,32 @@
+.main_container{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+}
+.home{
+    margin-top: 10rem;
+   font-family:Telegraf, sans-serif;
+   
+}
+.heading{
+    font-size: 40px;
+    font-weight: bold;
+}
+.para{
+    margin-top: 20px;
+    font-size: 20px;
+    color: #4c1d95;
+}
+.photo{
+    margin-left: 41rem;
+    margin-top: -19rem;
+}
+.line{
+    width: 100%;
+    height: 2px;
+    background-color: grey;
+}
+hr{
+    border: 1px solid grey;
+}

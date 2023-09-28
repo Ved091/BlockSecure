@@ -1,0 +1,19 @@
+.vote_nav{
+    height: 70px;
+    width: 100%;
+    background-color: #06b6d4;
+    display: flex;
+    align-items: center;
+    justify-content: right;
+}
+.btn_nav_vote{
+    background-color: red;
+    padding: 10px;
+    /* margin-left: -2em; */
+    border-radius: 20px;
+    color: white;
+}
+.btn_div_nav_vote{
+    margin-left: -2em;
+}
+

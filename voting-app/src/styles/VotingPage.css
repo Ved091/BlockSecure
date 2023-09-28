@@ -1,0 +1,18 @@
+.vote_table{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: calc(100vh - 70px) !important;  /*It tells the what is the remaining height as the navbar is of 70px */
+    margin-top: 2rem;
+}
+table{
+    border-collapse: collapse;
+}
+th, td {
+    width:150px;
+    text-align:center;
+    border:1px solid black;
+    padding:8px;
+ 
+}
+
