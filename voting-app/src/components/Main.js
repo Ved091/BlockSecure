@@ -1,22 +1,30 @@
-import React from 'react'
-import "../styles/Main.css"
-import Vote from "./FullVotingPhoto.avif"
+import React from 'react';
+import "../styles/Main.css";
+import VoteGif from "./FullVotingPhoto.avif";
 import Navbar from './NavBar';
+
 const Main = () => {
   return (
     <div>
-        
-        <Navbar/>
-        <div className='home'>
-        <div className='heading'>Why do we need to use <br/> Decentralize Voting System?</div>
-        <div  className='para'>A decentralized voting system offers a transformative solution to some of <br/> the fundamental challenges and concerns associated with traditional <br/> centralized voting systems. The need for such a system stems <br/> from the desire to enhance transparency, security, accessibility, and <br/> trustworthiness in the electoral process.Decentralized voting systems also <br/> address issues related to inclusivity and accessibility. Traditional voting <br/> methods often present obstacles for individuals who are unable to <br/> physically visit polling stations due to factors such as location, health, <br/> or mobility challenges. </div>
-        <img src={Vote} width={600} className='photo' alt='this is it'/>
-        {/* <div className='line'></div> */}
-        <br/>
-        <hr/>
+      <Navbar />
+      <div className='hero'>
+        <div className='hero-content'>
+          <div className='hero-text'>
+            <h1 className='hero-heading'>A Decentralized Voting App</h1>
+            <p className='hero-subtitle'>
+              Secure, Transparent, and Immutable Voting Solutions with Blockchain
+            </p>
+            <div className='point-wise-description'>
+              
+            </div>
+          </div>
+          <div className='hero-image'>
+            <img src="https://appinventiv.com/wp-content/uploads/sites/1/2019/10/A-Guide-to-Understand-Blockchain-Consensus-Algorithms.gif" alt='Blockchain Voting GIF' className='hero-gif' />
+          </div>
+        </div>
+      </div>
     </div>
-    </div>
-  )
-}
+  );
+};
 
-export default Main
+export default Main;

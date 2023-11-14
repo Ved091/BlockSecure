@@ -2,69 +2,49 @@ import React from "react";
 import { useNavigate } from "react-router-dom";
 import "../styles/NavBar.css";
 import { ConnectWallet } from "@thirdweb-dev/react";
+
 const Navbar = () => {
   const navigate = useNavigate();
+
   const login = () => {
     let path = "/login";
     navigate(path);
   };
+
   const signup = () => {
     let path = "/register";
     navigate(path);
   };
+
   return (
     <div>
-      <nav className="nav">
-        <div className="container is--nav">
+      <nav className="nav" style={{ background: "linear-gradient(to right, #4481eb, #04befe)" }}>
+        <div className="container">
+          <h1 className="nav__heading">
+            <span className="blocksecure">BlockSecure</span>
+          </h1>
           <div className="nav_menu">
             <div className="nav__menu-dp-wrap">
-              <div className="nav__menu-dp-link">
-                <a
-                  href="/about"
-                  className="nav__menu-link-padding w-inline-block"
-                >
-                  <div className="nav__menu-link-txt">Features</div>
-                </a>
-              </div>
-              <div className="nav__menu-dp-link">
-                <a
-                  href="/feedback"
-                  className="nav__menu-link-padding w-inline-block"
-                >
-                  <div className="nav__menu-link-txt">Features</div>
-                </a>
-              </div>
-              <div className="nav__menu-dp-link">
-                <a
-                  href="/contact"
-                  className="nav__menu-link-padding w-inline-block"
-                >
-                  <div className="nav__menu-link-txt">Features</div>
-                </a>
-              </div>
-              <div className="nav__menu-dp-link">
-                <a
-                  href="/footer"
-                  className="nav__menu-link-padding w-inline-block"
-                >
-                  <div className="nav__menu-link-txt">Features</div>
-                </a>
-              </div>
+              <a href="/" className="nav__menu-link">
+                Home
+              </a>
+              <a href="/about" className="nav__menu-link">
+                About Us
+              </a>
+              <a href="/why-voting" className="nav__menu-link">
+                Why Voting
+              </a>
             </div>
           </div>
           <ConnectWallet />
           <div className="nav__btns-wrp">
-            <div
-              className="btn_navbar is--navbar-login w-inline-block"
-              onClick={login}
-            >
-              <div>Login</div>
-            </div>
-            <div
-              className="btn_navbar is--main-cta is--nav w-inline-block"
-              onClick={signup}
-            >
-              <div>Sign Up</div>
+            <div className="btn-container">
+              <div className="login-signup" onClick={login}>
+                <div>Login</div>
+              </div>
+              <div className="login-signup" onClick={signup}>
+                <div>Sign Up</div>
+              </div>
             </div>
           </div>
         </div>

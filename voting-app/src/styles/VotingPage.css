@@ -1,18 +1,75 @@
-.vote_table{
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    height: calc(100vh - 70px) !important;  /*It tells the what is the remaining height as the navbar is of 70px */
-    margin-top: 2rem;
-}
-table{
-    border-collapse: collapse;
-}
-th, td {
-    width:150px;
-    text-align:center;
-    border:1px solid black;
-    padding:8px;
- 
-}
+/* VotingPage.css */
 
+/* Style for the whole page */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f8f8f8;
+    margin: 0;
+    padding: 0;
+  }
+  
+  .container {
+    width: 80%;
+    margin: 0 auto;
+    padding: 20px;
+  }
+  
+  /* Table styles */
+  table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-bottom: 20px;
+  }
+  
+  th, td {
+    border: 1px solid #ddd;
+    padding: 8px;
+    text-align: left;
+  }
+  
+  th {
+    background-color: #f2f2f2;
+  }
+  
+  /* Vote button style */
+  .vote-button {
+    background-color: #3498db;
+    color: white;
+    border: none;
+    padding: 8px 16px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 14px;
+    margin: 4px 2px;
+    cursor: pointer;
+    border-radius: 4px;
+  }
+  
+  .vote-button:hover {
+    background-color: #2980b9;
+  }
+  
+  /* Show Winner and Show Admin buttons */
+  .show-buttons {
+    margin-top: 20px;
+  }
+  
+  .show-buttons button {
+    background-color: #e74c3c;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin-right: 10px;
+    cursor: pointer;
+    border-radius: 6px;
+  }
+  
+  .show-buttons button:hover {
+    background-color: #c0392b;
+  }
+  
